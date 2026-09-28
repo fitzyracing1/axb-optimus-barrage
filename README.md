@@ -1,2 +1,5 @@
 # axb-optimus-barrage
-Barrage plain-language clone of fitzyracing1/axb-optimus
+
+Barrage clone of [fitzyracing1/axb-optimus](https://github.com/fitzyracing1/axb-optimus).
+
+Read [listing.barrage](listing.barrage).

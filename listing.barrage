@@ -1,0 +1,46 @@
+# Axb Optimus
+
+> An Optimus-class humanoid built around predictive echo: predict, act, hear, correct. No full world map.
+
+## Purpose
+Explain the robot as a loop that moves on a guessed bounce, then fixes the guess. Source: fitzyracing1/axb-optimus.
+
+## How it works (plain English)
+1. Predict the echo.
+2. Act on that guess.
+3. Restart a virtual sound card on every echo.
+4. Hear the real return and correct.
+5. Keep mission, telemetry, and an internet proof next to the loop.
+
+## Key ideas
+- Predictive echo (guess the bounce first)
+- No world map (the robot does not carry a full model of the world)
+- Virtual sound card restart (each echo starts hearing clean)
+
+## The actual code
+```
+# source: fitzyracing1/axb-optimus
+predict_echo()
+act()
+restart_sound_card()
+hear(); correct()
+```
+
+## Line-by-line translation
+1. predict_echo() → “guess the bounce”
+2. act() → “move on the guess”
+3. restart_sound_card() → “clear hearing for the next echo”
+4. hear(); correct() → “listen and fix the guess”
+
+## Decisions the program makes
+- If the real echo mismatches → correct the hypothesis
+- If a map is requested → refuse; the loop does not keep one
+
+## What a person would notice
+A robot that lives in a short hear-and-fix cycle.
+
+## Current status
+Barrage clone.
+
+## Next possible steps
+Open fitzyracing1/axb-optimus and run one cycle.
